@@ -1,0 +1,29 @@
+{% extends 'blog/blog_base.html' %}
+
+{% block content %}
+    <article class="post">
+        <aside class="actions">
+            {% if user.is_authenticated %}
+                <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}" style="background-color: white">
+                    {% include './icon/pencil-fill.svg' %}
+                </a>
+                <div class="delete-post">
+                    <a class="btn btn-default" href="{% url 'post_remove' pk=post.pk %}">delete<span class="glyphicon glyphicon-remove"></span></a>
+                </div> 
+            {% endif %}
+        </aside>
+        {% if post.published_date %}
+            <h2><a href="">{{ post.title }}</a>
+            </h2>
+            <p>{{ post.text|linebreaksbr }}</p>
+            <div class="timediv">
+                <time>published : {{ post.published_date }}</time>
+            </div>
+        {% else %}
+            <a class="btn btn-default" href="{% url 'post_publish' pk=post.pk %}">Publish</a>
+        {% endif %}
+
+    </article>
+{% endblock %}
+    
+

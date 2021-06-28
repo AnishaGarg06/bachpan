@@ -1,0 +1,95 @@
+body {
+	background-color: #fff;
+}
+
+.heading {
+	align-self: center;
+	text-align: center;
+	background-color: #FF9800;
+}
+
+.heading-a a{
+	color: #000000;
+	font-size: 16px;
+}
+
+.back{
+	display:flex;
+    justify-content:center;
+    background-color: #000;
+    padding-bottom: 100px;
+}
+
+.back-ground {
+	width: 1000px;
+	height: 600px;
+	margin-left: 200px;
+	margin-right: 200px;
+	background-repeat: no-repeat;
+	background-image: url(../image/teamwork.jpg);
+	background-position: center;
+	border-style: solid;
+}
+
+.back-ground a{
+	font-size: 20px;
+	color: #000000;
+	text-align: center;
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #eeeeee, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff, 
+                 0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
+  }
+  to {
+    text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 
+                 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.table-contents {
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 500px;
+}
+
+.form-area {
+	background-color: #FF9800;
+	padding: 20px;
+	height: auto;
+}
+.form1 {
+	margin: 20px;
+	width: 200px;
+	height: auto;
+	border-style: solid;
+}
+.form2 {
+	margin: 20px;
+	height: auto;
+	width: 200px;
+	border-style: solid;
+}
+.form3 {
+	margin: 20px;
+	width: 200px;
+	height: auto;
+	border-style: solid;
+}
+
+.logoname {
+	 	display:flex;
+}
+
+.logoname:after {
+  color:white;
+  content:'';
+  flex:1;
+  border-bottom:groove 4px;
+  margin:auto 0.25em;
+  box-shadow: 0 -1px ;/* ou 0 1px si border-style:ridge */
+}

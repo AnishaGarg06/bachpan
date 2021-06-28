@@ -1,0 +1,12 @@
+{% extends 'blog/survivor_stories.html'%}
+
+{% block content %}
+	<h2 class="newtitle">New Story</h2>
+	<div class="form-display">
+			<form method="POST" class="post-form">{% csrf_token %}
+				{{ form.as_p }}
+				<button type="submit" class="save btn-default">save</button>
+			</form>
+	</div>
+{% endblock %}
+		        	

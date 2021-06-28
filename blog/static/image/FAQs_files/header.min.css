@@ -1,0 +1,34 @@
+header{width:100%;position:fixed;top:0;left:0;z-index:99;padding:0 15px;margin-top:20px;transition:all 0.3s linear;-webkit-transition:all 0.3s linear;-moz-transition:all 0.3s linear;-o-transition:all 0.3s linear;}
+.header-wrapper{width:100%;height:65px;}
+.main-logo.columns{position:absolute;z-index:100;}
+.main-logo h1{margin:0 15px;line-height:69px;font-size:16px;text-transform:uppercase;}
+.main-logo img{max-height:140px;padding-top:2px;}
+.main-logo h1.white-color, .nav-item li a.white-color, .header-mobile ul li a.white-color{color:#fff !important;}
+.nav-bar .inline-list>li{line-height:65px;padding:0 5px;margin:0 10px;}
+.nav-bar .inline-list>li:hover a,.nav-bar .inline-list>li.nav-item-active a{border-bottom:2px solid;}
+.nav-item.inline-list{margin:0;padding:17px 0;}
+.nav-item li a{font-size:14px;line-height:30px;}
+.header-mobile{height:50px;overflow:hidden;}
+.header-mobile ul{margin:0;padding:0 10px;}
+.header-mobile ul.inline-list.right li{margin-left:2rem;}
+.header-mobile ul.inline-list.left li{margin-left:0rem;}
+.header-mobile > ul > li > a{line-height:50px;}
+aside ul.off-canvas-list li{text-align:center;}
+a.company-name{font-size:1.2rem !important;text-transform:uppercase;}
+a.left-off-canvas-toggle i{margin-top:10px;}
+aside ul.social-icons{margin-top:20px;margin-left:0;margin-bottom:30px;}
+aside ul.social-icons li a{padding:5px;border-bottom:none;}
+aside ul.social-icons li a i{border:1px solid;padding:10px 0px 7px;width:32px;font-size:1.1rem;text-align:center;border-radius:3px;}
+aside .social-icons li{display:inline-block;padding-bottom:75px;}
+aside .social-icons li img{width:40px;}
+.header-mobile{display:none;}
+@media all and (max-width:1024px){.header-mobile{display:block;}
+.main-logo h1{font-size:2rem;line-height:1;}
+.header-wrapper{display:none;}
+}
+@media all and (max-width:640px){.header-mobile .inline-list>li{margin-left:0;}
+header{padding:0 10px;}
+aside.left-off-canvas-menu{padding-bottom:55px;margin-bottom:40px;overflow-y:scroll;}
+.off-canvas-wrap.move-right{height:100%;overflow:hidden;}
+aside.left-off-canvas-menu .off-canvas-list{padding-bottom:150px;overflow-y:scroll;}
+}

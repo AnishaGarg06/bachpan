@@ -1,0 +1,26 @@
+body {
+	background-color: #ffffff;
+}
+
+.logoname {
+	 	display:flex;
+}
+.logoname:after {
+  color:white;
+  content:'';
+  flex:1;
+
+}
+
+.banner {  
+
+	background-image: url(../image/faq.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+}
+
+
+
+
+

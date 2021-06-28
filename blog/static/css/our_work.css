@@ -1,0 +1,54 @@
+body {
+	background-color: #ffffff;
+}
+
+.banner{
+	background-image: url(../image/ourwork.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+	margin-bottom: 25px;
+}
+
+.logoname {
+	 	display:flex;
+}
+
+.logoname:after {
+  color:white;
+  content:'';
+  flex:1;
+  border-bottom:groove 4px;
+  margin:auto 0.25em;
+  box-shadow: 0 -1px ;/* ou 0 1px si border-style:ridge */
+}
+
+.links{
+	background-color: #EEE;
+	padding-bottom: 20px;
+}
+
+.share{
+	display: flex;
+	font-size: 60px;
+	color: #000;
+}
+
+.share:before, .share:after {
+  color:black;
+  content:'';
+  flex:1;
+  border-bottom:groove 4px;
+  margin:auto 0.25em;
+  box-shadow: 0 -1px ;/* ou 0 1px si border-style:ridge */
+}
+
+.link{
+	font-size: 20px;
+	padding-left: 100px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+
+

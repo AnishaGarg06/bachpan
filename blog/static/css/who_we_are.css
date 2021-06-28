@@ -1,0 +1,128 @@
+body {
+	background-color: #ffffff;
+}
+
+.banner {  
+	height: 400px;
+	width: screen.width;
+	background-image: url(../image/children-banner.jpg);
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 10px;
+
+}
+.text h1{
+	margin-left: 20px;
+	font-size: 100px;
+	padding-top: 400px;
+}
+
+.text h2{
+	margin-right: 10px;
+}
+
+
+.Test {
+	margin-top: 100px;
+	margin-left: 100px;
+	margin-right:100px;
+	padding: 15px;
+	border:solid;
+}
+
+.main-text {
+	margin-top: 80px;
+}
+
+.tab-content {
+	margin-left: 100px;
+	margin-right:100px;
+	margin-bottom:100px
+	margin-top: 10px;
+	padding: 15px;
+}
+
+.tab-content li{
+	width: 50px;
+	height: 200px;
+}
+
+.info {
+	border-style: solid;
+}
+
+.tab-content img{
+	width: 140px;
+	height: 180px;
+	border-style: solid;
+	margin-bottom: 5px;
+}
+
+.ending {
+	border-top: 4px solid black;
+}
+
+.about-us{
+	height: 400px;
+	width: screen.width;
+	margin-top: 250px;
+}
+
+.img-hug{
+	height: 400px;
+	width: 50px;
+}
+
+.imagee{
+	height: 400px;
+}
+
+.row1 {
+	height: 400px;
+	width: screen.width;
+}
+
+.heading4{
+	margin-top: 35px;
+}
+
+.logoname {
+	 	display:flex;
+}
+
+.logoname:after {
+  color:white;
+  content:'';
+  flex:1;
+  border-bottom:groove 4px;
+  margin:auto 0.25em;
+  box-shadow: 0 -1px ;/* ou 0 1px si border-style:ridge */
+}
+
+.others {
+	padding-bottom: 25px;
+	padding-top: 5px;
+	background-color: #EEEEEE;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.heading:before, .heading:after {
+  color:black;
+  content:'';
+  flex:1;
+  border-bottom:groove 4px;
+  margin:auto 0.25em;
+  box-shadow: 0 -1px ;/* ou 0 1px si border-style:ridge */
+}
+
+.about-us-text {
+	padding-bottom: 25px;
+	padding-top: 5px;
+	background-color: #EEEEEE;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 30px;
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)http://127.0.0.1:8000/faq -->
+<html lang="en-US"><div id="twoseven-scripts" data-info="Scripts added by TwoSeven extension" style="display: none !important; position: static !important; top: 0px !important; left: 0px !important; width: 0px !important; height: 0px !important;"><script type="text/javascript" id="__tmpScript-197635701" data-added-by-two-seven="1">(function() {
+      window.twoseven = {};
+    })();</script><script type="text/javascript" id="__tmpScript-551788956" data-added-by-two-seven="1">(function() {
+      window.twoseven.waitForDOMNode = async function waitForDOMNode(e,t=document){e=e||{};const{type:n,value:o}=e;if(!n||!o)throw new Error("Must specify identifier");let s=o;switch(n){case"tag":s=o.toUpperCase()}if("check"!==n){const e=await i({type:"selector",value:s},[],t);if(e)return new Promise(t=>t(e))}async function i({type:e,value:t},n,o){let s;switch(e){case"tag":s=n.find(e=>e.tagName===t);break;case"selector":s=o.querySelector(t);break;case"check":for(const e of n){if(await t(e))return e}}return s}return new Promise((e,o)=>{const r=new MutationObserver(async o=>{for(const a of o)if("childList"===a.type){const o=Array.from(a.addedNodes),c=await i({type:n,value:s},o,t);if(c)return r.disconnect(),e(c)}});r.observe(t,{childList:!0,subtree:!0})})};
+    })();</script><script type="text/javascript" id="__tmpScript-601643699" data-added-by-two-seven="1">(function() {
+      
+  window.twoseven.reportError = function reportError(e,t,n){"string"==typeof(n=n||{})&&(n={message:n});const{message:o,stack:s}=t;Object.assign(n,{tag:e,error:{message:o,stack:s}}),window.tsExtGetPostToParent()({name:name,tag:e,action:"report-error",json:n}),console.error(JSON.stringify(n.error))}
+;
+    })();</script><script type="text/javascript" id="__tmpScript-905178063" data-added-by-two-seven="1">(function() {
+      
+  window.twosevenHmsToSecondsOnly = function(str) {
+      var p = str.split(':'),
+          s = 0, m = 1;
+
+      while (p.length > 0) {
+          s += m * parseInt(p.pop(), 10);
+          m *= 60;
+      }
+
+      return s;
+  }
+;
+    })();</script><script type="text/javascript" id="__tmpScript-145192902" data-added-by-two-seven="1">(function() {
+      window.twosevenExtLog = function twosevenExtLog(e,o,c){o||(o=e,e=void 0);let n=c||"black";if(c)switch(c){case"success":n="Green";break;case"info":n="DodgerBlue";break;case"error":n="Red";break;case"warning":n="Orange";break;default:n=c}e?console.log("%c"+e+": "+o,`color:${n}`):console.log("%c"+o,`color:${n}`)};
+    })();</script><script type="text/javascript" id="__tmpScript-701043062" data-added-by-two-seven="1">(function() {
+      
+  document.twosevenGET = function(url, callback) {
+    var xmlhttp = new XMLHttpRequest();
+
+    xmlhttp.onreadystatechange = function() {
+      if (xmlhttp.readyState == XMLHttpRequest.DONE ) {
+        if (xmlhttp.status == 200) {
+          callback(null, xmlhttp.responseText);
+        } else {
+          callback('something else other than 200 was returned', '');
+        }
+      }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+  };
+;
+    })();</script><script type="text/javascript" id="__tmpScript-348388649" data-added-by-two-seven="1">(function() {
+      
+  window.triggerEvent = function(e,t,n,o=!1){let s;o?(n&&"string"!=typeof n&&(n=JSON.stringify(n)),s=n):s={data:n},window.twosevenScriptsDiv&&n&&"object"==typeof n&&(console.warn(`WARNING: Attempting to send an object via event.detail from CS->Page does not work on Firefox: ${JSON.stringify(n)}`),console.error((new Error).stack));var i=new CustomEvent(t,{bubbles:!0,composed:!0,detail:s});e.dispatchEvent(i)}
+;
+    })();</script><script type="text/javascript" id="__tmpScript-759353656" data-added-by-two-seven="1">(function() {
+      window.twoseven.postTo = async function postTo(e,t,n=!1){let o;return t.name=t.name||name,o=n?new Promise(e=>{const n=`ack-${t.action}-${1e9*Math.random()|0}`;t.ack={event:n};window.debug&&["play","pause","currentTime"].some(e=>t.action.includes(e)),window.addEventListener("message",function t({data:o={}}){o.action===n&&(window.removeEventListener("message",t),e(o.json))})}):new Promise(e=>e()),e.postMessage(t,"*"),o};
+    })();</script><script type="text/javascript" id="__tmpScript-705820463" data-added-by-two-seven="1">(function() {
+      window.tsExtGetPostTo = function tsExtGetPostTo(){return window.twoseven&&window.twoseven.postTo||window.postTo};
+    })();</script><script type="text/javascript" id="__tmpScript-700482102" data-added-by-two-seven="1">(function() {
+      window.tsExtGetPostToParent = function tsExtGetPostToParent(){return window.twoseven&&window.twoseven.postToParent||window.postToParent};
+    })();</script><script type="text/javascript" id="__tmpScript-980914591" data-added-by-two-seven="1">(function() {
+      window.twoseven.postResponse = async function postResponse(e,t){const{source:n,data:{ack:{event:o}}}=e;window.tsExtGetPostTo()(n,{action:o,json:t})};
+    })();</script><script type="text/javascript" id="__tmpScript-877253253" data-added-by-two-seven="1">(function() {
+      window.twoseven.postToParent = async function postToParent(e,t=!1){return window.tsExtGetPostTo()(window.parent,e,t)};
+    })();</script><script type="text/javascript" id="__tmpScript-519540502" data-added-by-two-seven="1">(function() {
+      window.twoseven.postToTop = async function postToTop(e,t=!1){return window.tsExtGetPostTo()(window.top,e,t)};
+    })();</script><script type="text/javascript" id="__tmpScript-691040615" data-added-by-two-seven="1">(function() {
+      
+  window.twoseven.getFromStorage = e=>new Promise((t,n)=>{const o="get-from-storage-"+(1e9*Math.random()|0);window.addEventListener(o,e=>{window.removeEventListener(o,this);const{detail:{data:{value:n}}}=e;t(n)}),triggerEvent(window,"get-from-storage",{key:e,evt:o})})
+  window.twoseven.saveToStorage = e=>{triggerEvent(window,"save-to-storage",e)}
+;
+    })();</script><script type="text/javascript" id="__tmpScript-845151654" data-added-by-two-seven="1">(function() {
+      
+  function attachHistoryListeners(){var e=history.pushState;history.pushState=function(t,n,o){return"function"==typeof history.onpushstate&&history.onpushstate({state:t}),triggerEvent(window,"pushstate",{uri:o}),e.apply(history,arguments)};var t=history.replaceState;history.replaceState=function(e){return"function"==typeof history.onreplacestate&&history.onreplacestate({state:e}),t.apply(history,arguments)}}
+  attachHistoryListeners()
+;
+    })();</script><script type="text/javascript" id="__tmpScript-287696972" data-added-by-two-seven="1">(function() {
+      window.twoseven.once = function once(e,t,n){e.addEventListener(t,function o(s){e.removeEventListener(t,o),n(s)})};
+    })();</script><script type="text/javascript" id="__tmpScript-370867467" data-added-by-two-seven="1">(function() {
+      
+  window.twoseven.isOnTwoSevenTab = async () => {
+    const result = await window.twoseven.postTo(window, { action: 'is-on-twoseven-tab' }, true)
+    return result
+  }
+;
+    })();</script><script type="text/javascript" id="__tmpScript-806949716" data-added-by-two-seven="1">(function() {
+      
+  window.twoseven.isPaused = async () => {
+    const result = await window.twoseven.postTo(window, { action: 'twoseven:pause-state' }, true)
+    return result
+  }
+;
+    })();</script><script type="text/javascript" id="__tmpScript-300960909" data-added-by-two-seven="1">(function() {
+      
+      const modal = document.querySelector('.twoseven-ext-tab-media-modal')
+      const modalCloseBtn = modal.querySelector('.close')
+      function closeModal () {
+        modal.style.display = 'none'
+        const frame = document.querySelector('#twoseven-ext-tab-media-iframe').contentWindow
+        frame.postMessage({
+          __evt_name: 'modal-hide'
+        }, '*')
+      }
+      modalCloseBtn.onclick = closeModal
+
+      window.onmessage = function (e) {
+        if (e.data.__evt_name === 'modal-hide') {
+          closeModal()
+        }
+      }
+
+      window.twoseven.closeTabMediaModal = closeModal
+
+      window.onclick = function (e) {
+        if (e.target.id === 'twoseven-ext-tab-media-modal' && modal.style.display === 'block') {
+            closeModal()
+        }
+      }
+    ;
+    })();</script></div><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width">
+	<title>FAQs</title>
+	<meta name="google-site-verification" content="z1BE_c3E8WBFb7r-0BxsSIUX1d4CyR93lxSivubuDdY">
+    <meta name="google-site-verification" content="2Q2xqQGZ28sWdxvZ_q30_A-YdL4GaX5D_1tiWw8THC4">
+
+	<link rel="stylesheet" href="./FAQs_files/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet" href="./FAQs_files/faq.css">
+	<!-- footer -->	
+	<link href="./FAQs_files/style.css" rel="stylesheet">
+
+	<!-- header -->	
+
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="./FAQs_files/header.min.css" media="all">
+    <link rel="stylesheet" href="./FAQs_files/foundation.min.css">
+    <link rel="stylesheet" href="./FAQs_files/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./FAQs_files/main.min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./FAQs_files/footer.min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./FAQs_files/tc.min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./FAQs_files/animate.min.css"> 
+    <link rel="stylesheet" type="text/css" href="./FAQs_files/owl.carousel.min.css"> 
+    <script src="./FAQs_files/jquery.min.js.download"></script>
+                            
+<link href="chrome-extension://cjdnfmjmdligcpfcekfmenlhiopehjkd/web_resources/modal/modal.css" rel="stylesheet" id="__tmpStyle"></head>
+<body>
+
+		<div class="top-header css-66n7po" style="background-color: gray;"><div class="header-logo"><a aria-label="Home" href="http://127.0.0.1:8000/?ptype=homepage"><svg class="header-logo-svg" viewBox="0 0 255 121" height="38" width="80"></svg><img src="./FAQs_files/bachpan.png" style="width: 100px; height:100px; margin-left: -70px"><b class="logoname" style="font-size: 35px; color: black;">Bachpan - Save The Innocence</b>
+                </a><ul style="text-align: right; margin-top: -50px; margin-right: 30px"><a aria-label="Home" href="http://127.0.0.1:8000/?ptype=homepage">
+                        </a><li style="display: inline-block; margin: 4px; padding-left:5px; padding-right: 5px;"><a aria-label="Home" href="http://127.0.0.1:8000/?ptype=homepage"></a><a href="https://www.facebook.com/pg/bachpan15" target="_blank" style="font-size: 12px;"><img src="./FAQs_files/facebook.png" alt="Facebook" style="width: 30px; height: 30px;"></a></li>
+                        <li style="display: inline-block;  margin: 4px;padding-right:5px;"><a href="https://twitter.com/Bachpan_15?s=09" target="_blank" style="font-size: 12px;"><img src="./FAQs_files/twitter.png" alt="Twitter" style="width: 30px; height: 30px;"></a></li>
+                        <li style="display: inline-block;  margin: 4px; padding-right: 5px;"><a href="https://instagram.com/bachpan15?igshid=1g66003fv8jx" target="_blank" style="font-size: 12px;"><img src="./FAQs_files/instaicon.png" style="width: 30px; height: 30px;"></a></li>
+                        <li style="display: inline-block;  margin: 4px; padding-right: 5px;"><a href="http://www.linkedin.com/company/bachpan15" target="_blank" style="font-size: 12px;"><img src="./FAQs_files/linkedin.png" alt="Linked in" style="width: 30px; height: 30px;"></a></li>
+                </ul>
+                </div> 
+
+
+		</div><div class="header-categories" align="right" style="background-color: gray;"><style data-emotion-css="1s78ehj">.css-1s78ehj{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:100%;width:50%;-webkit-align-items:right;-webkit-box-align:right;-ms-flex-align:right;align-items:right 4;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}</style><nav class="css-1s78ehj e166w7co0"><style data-emotion-css="28fvnq animation-dwlwav animation-5f1q21">.css-28fvnq{color:#666;text-transform:uppercase;cursor:pointer;}.css-28fvnq:hover,.css-28fvnq.hovered{color:#000;}.css-28fvnq:hover > .c-title,.css-28fvnq.hovered > .c-title{position:relative;}.css-28fvnq:hover > .c-title:after,.css-28fvnq.hovered > .c-title:after{position:absolute;content:"";height:2px;bottom:-2px;left:0;right:0;background:#000;}.css-28fvnq .subMenu{position:absolute;top:109px;left:0;width:100%;background:#fff;border-top:1px solid #999;box-shadow:0 3px 3px 0 rgba(0,0,0,0.14);color:#000;cursor:default;display:none;}.css-28fvnq .subMenu-discount{top:85px;}.css-28fvnq .subMenu-visible{display:block;}.css-28fvnq .subMenu-show{-webkit-animation:animation-5f1q21 0.25s ease-in;animation:animation-5f1q21 0.25s ease-in;z-index:3;}.css-28fvnq .subMenu-hide{-webkit-animation:animation-dwlwav 0.25s ease-out forwards;animation:animation-dwlwav 0.25s ease-out forwards;z-index:1 !important;}@-webkit-keyframes animation-dwlwav{from{opacity:1;}80%{opacity:0.5;}to{opacity:0;}}@keyframes animation-dwlwav{from{opacity:1;}80%{opacity:0.5;}to{opacity:0;}}@-webkit-keyframes animation-5f1q21{from{opacity:0;}to{opacity:1;}}@keyframes animation-5f1q21{from{opacity:0;}to{opacity:1;}}</style><div class=" css-28fvnq"><div class="c-title"><b style="color: black">BLOG</b></div></div><div class=" css-28fvnq"><div class="c-title"><b style="color: black">BLOG</b></div></div><div class=" css-28fvnq"><div class="c-title"><b style="color: black">BLOG</b></div></div><div class=" css-28fvnq"><div class="c-title"><b style="color: black">BLOG</b></div></div><div class=" css-28fvnq"><div class="c-title"><b style="color: black">BLOG</b></div></div></nav></div>
+	
+
+		<div>
+			<div class="banner"></div>
+		</div>
+		<div class="section-space footer"><!-- footer -->		
+			<div class="container">		
+				<div class="row">		
+					<div class="col-md-12">		
+						<div class="row">		
+							<div class="col-md-2 footer-block">		
+								<ul class="listnone">		
+									<li><a href="http://127.0.0.1:8000/">Home</a>		
+									</li><li><a href="http://127.0.0.1:8000/blogs">Blog</a>
+									</li><li><a href="http://127.0.0.1:8000/faq">Faq</a>
+									</li><li><a href="http://127.0.0.1:8000/share-your-story/">Stories</a>					
+								</li></ul>		
+							</div>		
+							<div class="col-md-2 footer-block">		
+								<ul class="listnone">		
+									<li><a href="https://www.facebook.com/pg/bachpan15" target="_blank">Facebook</a></li>
+									<li><a href="https://twitter.com/Bachpan_15?s=09" target="_blank">Twitter</a></li>
+									<li><a href="https://instagram.com/bachpan15?igshid=1g66003fv8jx" target="_blank">Instagram</a></li>
+									<li><a href="http://www.linkedin.com/company/bachpan15" target="_blank">Linked In</a></li>
+								</ul>		
+							</div>				
+							<div class="col-md-2 footer-block footer-contact">		
+							<img class="img" src="./FAQs_files/qr.png" width="80%">		
+							</div>		
+							<div class="col-md-4 footer-block">				
+								<p>
+									<a>Bachpan-Save the innocence</a><br>
+									<a>Panchkula</a><br>
+									<a>Haryana</a><br>
+									<a>Contact No.: 8847586324</a><br>
+									<a>Email: bachpansavetheinnocence@gmail.com</a><br>
+								</p>		
+							</div>		
+						</div>		
+					</div>		
+				</div>		
+			</div>			
+		</div>	
+			
+<div>
+    <div id="twoseven-ext-tab-media-modal" class="twoseven-ext-tab-media-modal" style="display: none;">
+      <!-- Modal content -->
+      <div class="twoseven-ext-tab-media-modal-content">
+        <div class="iframe-container" style="height: 100%; width: 100%;">
+          <span class="close">×</span>
+        </div>
+      </div>
+    </div></div></body></html>

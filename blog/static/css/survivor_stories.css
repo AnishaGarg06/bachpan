@@ -1,0 +1,111 @@
+body{
+	background: #fff;
+}
+
+.back{
+    background-color: #000;
+    padding-bottom: 100px;
+}
+
+.mainbox{
+	background-color: #000;
+	padding-bottom: 30px;
+}
+
+.stories {
+  	display:flex;
+	background:linear-gradient(to left,turquoise,turquoise,white,turquoise,turquoise);
+	border-style:solid;
+	padding-top: 25px;
+  	padding-bottom: 25px;
+}
+
+.stories:before, .stories:after {
+  color:white;
+  content:'';
+  flex:1;
+  border-bottom:groove 4px;
+  margin:auto 0.25em;
+  box-shadow: 0 -1px ;/* ou 0 1px si border-style:ridge */
+}
+
+
+.post p{
+	border-style: groove;
+	padding: 20px 2px 20px 40px;
+	font-family: "Lucida Console", "Courier New", monospace;
+	margin-bottom: 10px;
+	margin-top: 35px;
+	background-color: #EEEEEE;
+}
+
+.post time{
+	font-family: 'lobster';
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 3px;
+	padding-right: 3px;
+	border-style: groove;
+	background-color: #F5F5F5;
+}
+
+
+.img-story{
+	width: screen.width;
+	height: 600px;
+	overflow: hidden;
+	background-image: url(../image/story.jpg);
+	background-size: cover;
+	background-position: center;
+	border: solid;
+}
+
+
+.form-display {
+	background: #ffffff;
+	padding: 20px;
+}
+
+.newtitle{
+	color: #fff;
+}
+
+
+.social-box{
+	margin-top: 30px;
+	margin-bottom: 80px;
+	background-color: #fff;
+}
+
+.socialbegin{
+	background-color: #fff;
+}
+
+.final-line {
+	border: 2px dashed black;
+	margin-left: 400px;
+	margin-right: 400px;
+}
+
+.timediv {
+	text-align-last: right;
+}
+
+.ending-line {
+	border: 2px solid white;
+}
+
+.logoname {
+	 	display:flex;
+}
+
+.logoname:after {
+  color:white;
+  content:'';
+  flex:1;
+  border-bottom:groove 4px;
+  margin:auto 0.25em;
+  box-shadow: 0 -1px ;/* ou 0 1px si border-style:ridge */
+}
+
+

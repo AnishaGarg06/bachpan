@@ -1,0 +1,13 @@
+{% extends 'blog/survivor_stories.html' %}
+
+{% block content %}
+	{% for stories in stories %}
+	 	<article class="post">
+		    <p>{{ stories.text|linebreaksbr }}</p>
+		        <div class="timediv">
+		         	<time>published : {{ stories.published_date }}</time>
+		        </div>
+	    </article> 
+	{% endfor %}           
+{% endblock %}    
+

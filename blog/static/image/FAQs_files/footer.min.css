@@ -1,0 +1,34 @@
+footer{}
+.towards-top{color:#363636;text-align:center;left:0;margin-top:-30px;position:absolute;right:0;z-index:99;display:none;}
+.towards-top i{padding:10px;border-radius:50%;}
+.footer-wrapper{padding:60px 0;}
+.footer-wrapper .footer-address-wrap.single-location{margin:auto;float:none !important;}
+.footer-wrapper .footer-address-wrap.single-location p{margin-left:auto;margin-right:auto;}
+.single-address-wrap{margin-bottom:20px;}
+.footer-social li{display:inline-block;}
+.footer-social li a{margin-left:30px;}
+.footer-social li:first-child a{margin-left:0;}
+.footer-social li a i{border:1px solid;padding:10px 0px 7px;width:32px;font-size:1.1rem;text-align:center;border-radius:3px;}
+.footer-social li img{width:32px;}
+.footer-title{text-transform:uppercase;padding:0;font-size:0.8rem;margin-bottom:25px;}
+.footer-wrapper .footer-address-wrap{margin:0;padding-left:0;float:left !important;}
+.footer-wrapper .footer-address-wrap p{font-size:0.8rem;width:70%;margin-bottom:15px;}
+.footer-wrapper .footer-address-wrap p.footer-phone-no{margin-bottom:0;}
+.footer-wrapper .footer-address-wrap p.footer-email-id{margin-top:15px;}
+.multi-location-footer .footer-title{margin-bottom:2px;}
+.footer-time{margin-bottom:15px;}
+.footer-time p{font-size:0.8rem;}
+.footer-location-view-more-btn a{font-size:0.8rem;text-decoration:underline;}
+@media all and (max-width:1024px){.footer-title{font-size:0.9rem;}
+.footer-wrapper p{font-size:0.75rem;padding-left:0;}
+.footer-social.text-right{text-align:center !important;}
+.footer-address{margin-bottom:30px;}
+}
+@media all and (max-width:640px){.towards-top{position:fixed;bottom:10%;right:5%;left:initial;opacity:0.5;}
+.footer_mobile{height:50px;position:fixed;bottom:0;width:100%;z-index:100;}
+.footer_mobile i{line-height:50px;padding:0 30px;}
+.footer_mobile li{padding-bottom:0 !important;}
+#numbersModal{min-height:0px !important;position:fixed !important;top:auto !important;bottom:0 !important;padding:0 !important;}
+#numbersModal a{color:inherit !important;font-size:1.4rem !important;display:block !important;box-shadow:-1px -1px 1px !important;padding:6px !important;}
+#numbersModal a i.fa{margin-right:8px !important;font-family:'FontAwesome' !important;}
+}

@@ -1,0 +1,24 @@
+@font-face{font-family:font_1;src:url('../fonts/GillSansStd.otf');}
+@font-face{font-family:font_2;src:url('../fonts/GillSansStd-Light.otf');}
+@font-face{font-family:font_3;src:url('../fonts/GillSansStd-Bold.otf');}
+.bg_color_a, .page-content{background:rgb(255,255,255)!important;}
+.color_a, .menu_catg_tabs li a,.menu_catg_tabs li.active, .gallery_catg_tabs li a, .gallery_catg_tabs li.active,
+.button, .event-tabs li.tab-title.active a, .event-tabs li.tab-title a:hover{color:rgb(255, 255, 255) !important;}
+.bdr_color_a, .off-canvas-wrap, #triangle-up{border-color:rgb(255,255,255) !important;}
+.color_b, .main-logo h1, .nav-item li a, .reviewer-name, ul.rating .fa-star, .event-name, .address-head,
+.header-mobile > ul > li > a, .review-rating,.event-tabs li.tab-title a{color:#000!important;}
+.bg_color_b, footer, .fifth-section-gallery .orbit-bullets li, .menu_catg_tabs, .gallery_catg_tabs, .button,
+.event-tabs li.tab-title.active a, .event-tabs li.tab-title a:hover{background:#000 !important;}
+.bg_color_c{background:#008cba;}
+.color_d, .review-text, .morelink, .rsvp, .event-location, .event-price, .event-date, .event-time,
+.address h6, .phone-no h6, .opening-hours h6, .email-id h6, .menu-item-price, .menu-item-name, .menu-item-desc{color:rgb(70,70,70)!important;}
+.font_1, .nav-item li a, .event-name, .menu_catg_tabs li a, .gallery_catg_tabs li a, .header-mobile > ul > li > a{font-family:font_1;letter-spacing:1px;}
+.font_2, .on-hover-text, .menu-item-price, .menu-item-desc, .menu-item-catg,
+.menu-item-name, .button, .clearing-caption,
+.rsvp, .event-location, .event-price, .event-date, .event-time{font-family:font_2 !important;letter-spacing:1px;}
+.font_3,.head-bg h3, .section-head{font-family:font_3 !important;letter-spacing:1px;}
+.font_size_1, .home-text-heading, .bg-img-section-head, .head-bg h3, .section-head{font-size:40px !important;}
+.font_size_2, .sub-category-head h4, .reviews-tabs .tabs li a{font-size:14px !important;}
+.font_size_3, .offer-desc p, .menu_catg_tabs li a, .gallery_catg_tabs li a, .sub-category-head > p, .menu-item-name, .menu-item-desc,
+.menu-item-price, .menu-item-scat p, .get-direction-btn, .button, .event-name,
+.rsvp, .event-location, .event-price, .event-date, .event-time, .review-rating{font-size:12px !important;}

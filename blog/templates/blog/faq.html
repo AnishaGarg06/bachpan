@@ -1,0 +1,205 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>FAQs</title>
+	<meta name="google-site-verification" content="z1BE_c3E8WBFb7r-0BxsSIUX1d4CyR93lxSivubuDdY">
+    <meta name="google-site-verification" content="2Q2xqQGZ28sWdxvZ_q30_A-YdL4GaX5D_1tiWw8THC4" />
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel= "stylesheet" href="{% static 'css/faq.css' %}">
+	<!-- footer -->	
+	<link href="https://ngodarpan.gov.in/assets/css/style.css" rel="stylesheet">
+
+	<!-- header -->	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/css/foundation.min.css" />                            
+</head>
+
+<body>
+
+		<div class="section-space footer" >
+
+			<div class="header-logo"><svg class="header-logo-svg" viewBox="0 0 255 121" height="0" width="80">
+				<table class="section-space footer" style="margin-top: -20px; height: 10px; border:0;" >
+					<tr>
+						<td width="1200px">
+							<img src="{% static 'image/bachpan.png' %}" style="width: 95px; height:70px; "/>
+						</td>
+						<td align="right">
+							<a style="font-size: 14px; line-height: 1.5; color: white;" >
+								Contact: 8847586324 <br>Email: bachpansavetheinnocence<br>Bachpan - Save The Innocence<br>Panchkula<br>Haryana
+							</a>
+						</td>
+					</tr>
+				</table>
+				<b class="logoname" style="font-size: 35px; color: white; margin-top: -50px;">Bachpan - Save The Innocence</b>
+				</svg>
+			</div>
+				<div class="header-categories" align="center"><style data-emotion-css="1s78ehj">.css-1s78ehj{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:100%;width:50%;-webkit-align-items:right;-webkit-box-align:right;-ms-flex-align:right;align-items:right 4;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}</style><nav class="	css-1s78ehj e166w7co0"><style data-emotion-css="28fvnq animation-dwlwav animation-5f1q21">.css-28fvnq{color:#666;text-transform:uppercase;cursor:pointer;}.css-28fvnq:hover,.css-28fvnq.hovered{color:#000;}.css-28fvnq:hover > .c-title,.css-28fvnq.hovered > .c-title{position:relative;}.css-28fvnq:hover > .c-title:after,.css-28fvnq.hovered > .c-title:after{position:absolute;content:"";height:2px;bottom:-2px;left:0;right:0;background:#000;}.css-28fvnq .subMenu{position:absolute;top:109px;left:0;width:100%;background:#fff;border-top:1px solid #999;box-shadow:0 3px 3px 0 rgba(0,0,0,0.14);color:#000;cursor:default;display:none;}.css-28fvnq .subMenu-discount{top:85px;}.css-28fvnq .subMenu-visible{display:block;}.css-28fvnq .subMenu-show{-webkit-animation:animation-5f1q21 0.25s ease-in;animation:animation-5f1q21 0.25s ease-in;z-index:3;}.css-28fvnq .subMenu-hide{-webkit-animation:animation-dwlwav 0.25s ease-out forwards;animation:animation-dwlwav 0.25s ease-out forwards;z-index:1 !important;}@-webkit-keyframes animation-dwlwav{from{opacity:1;}80%{opacity:0.5;}to{opacity:0;}}@keyframes animation-dwlwav{from{opacity:1;}80%{opacity:0.5;}to{opacity:0;}}@-webkit-keyframes animation-5f1q21{from{opacity:0;}to{opacity:1;}}@keyframes animation-5f1q21{from{opacity:0;}to{opacity:1;}}</style><div class=" css-28fvnq"><div class="c-title">
+
+					<a href="{% url 'home_page' %}" style="color:white;"><b>Home</b></a></div></div>
+
+					<div class=" css-28fvnq"><div class="c-title"><a href="{% url 'post_list' %}" style="color: white"><b>BLOG</b></a>
+
+					</div></div><div class=" css-28fvnq"><div class="c-title">
+
+					<a href="{% url 'who_we_are' %}" style="color: white"><b>WHO WE ARE</b></a></div></div><div class=" css-28fvnq"><div class="c-title"><a href="{% url 'our_work' %}" style="color: white"><b>OUR WORK</b></a></div></div><div class=" css-28fvnq"><div class="c-title">
+
+					<a href="{% url 'faq' %}" style="color: white"><b>FAQs</b></a></div></div>
+					<div class=" css-28fvnq"><div class="c-title"><a href="{% url 'work_with_us' %}" style="color: white"><b>WORK WITH US</b></a></div></div>
+
+					<div class=" css-28fvnq"><div class="c-title"><a href="https://www.facebook.com/pg/bachpan15" target="_blank" style="font-size: 12px;"><img src="{% static 'image/facebook.png' %}" alt="Facebook" style="width: 30px; height: 30px;" /></a></li></div></div><div class=" css-28fvnq"><div class="c-title"><a href="https://twitter.com/Bachpan_15?s=09" target="_blank" style="font-size: 12px;"><img src="{% static 'image/twitter.png' %}" alt="Twitter"  style="width: 30px; height: 30px;" /></a></div></div>
+					<div class=" css-28fvnq"><div class="c-title"><a href="https://instagram.com/bachpan15?igshid=1g66003fv8jx" target="_blank" style="font-size: 12px;"><img src="{% static 'image/instaicon.png' %}" style="width: 30px; height: 30px;"  /></a></div></div><div class=" css-28fvnq"><div class="c-title"><a href="http://www.linkedin.com/company/bachpan15" target="_blank" style="font-size: 12px;"><img src="{% static 'image/linkedin.png' %}" alt="Linked in"  style="width: 30px; height: 30px;" /></a></div></div>
+				</nav></div>
+			</div> 
+		</div>
+	
+		<div>
+			<div class="banner"></div>
+		</div>
+
+		<div class="main-content" style="margin:50px;">
+			<ul style="font-size:20px;">
+				<li>
+					<b>Where can we report child sexual abuse?</b>
+					<br>
+					<a href="https://www.instagram.com/p/B_5LKgKhAMd/?utm_source=ig_web_copy_link" target="_blank">Click Here</a>
+					<hr class="style-three">
+				</li>
+				<li>
+					<b>Why does cycle of child sexual abuse continue ?</b>
+					<br>
+					<a href="https://www.instagram.com/p/CADVV7XBM0s/?utm_source=ig_web_copy_link" target="_blank">Click here</a>
+					<hr class="style-three">
+				</li>
+				<li>
+					<b>How to break cycle of child sexual abuse ?</b>
+					<br>
+					<a href="https://www.instagram.com/p/CAIkAfFBzrS/?utm_source=ig_web_copy_link" target="_blank">Click here</a>
+					<hr class="style-three">
+				</li>
+				<li>
+					<b>What are gestures shown by children, who have been sexually abused?</b>
+					<br>
+					<a href="https://www.instagram.com/p/CA2lbZdh02b/?utm_source=ig_web_copy_link" target="_blank">Click here</a>
+					<hr class="style-three">
+				</li>
+				<li>
+					<b>Who can touch a child without their consent?</b>
+					<br>
+					<a href="https://www.instagram.com/p/CBgH328hZrr/?utm_source=ig_web_copy_link" target="_blank">Click here</a>
+					<hr class="style-three">
+				</li>
+				<li>
+					<b>How can we report a cyber crime?</b>
+					<br>
+					<a href="https://www.instagram.com/p/CEHccsUBtrU/?utm_source=ig_web_copy_link" target="_blank">Click here</a>
+					<hr class="style-three">
+				</li>
+				<li>
+					<b>Why does a child freeze during sexual assault?</b>
+					<br>
+					<a href="https://www.instagram.com/p/CFZ1fZGBqd7/?utm_source=ig_web_copy_link" target="_blank">Click here</a>
+					<hr class="style-three">
+				</li>
+				<li>
+					<b>How child sexual abuse can affect mental health?</b>
+					<br>
+					<a href="https://www.instagram.com/p/CGKza8bB-ua/?utm_source=ig_web_copy_link" target="_blank">Click here</a>
+					<hr class="style-three">
+				</li>
+				<li>
+					<b>Reasons why children might not tell about the abuser?</b>
+					<br>
+					<a href="https://www.instagram.com/p/CGpu9XFhR2V/?utm_source=ig_web_copy_link" target="_blank">Click here</a>
+					<hr class="style-three">
+				</li>
+				<li>
+					<b>What is online child grooming?</b>
+					<br>
+					<a href="https://www.instagram.com/p/CHA1W7kBlur/?utm_source=ig_web_copy_link" target="_blank">Click here</a>
+					<hr class="style-three">
+				</li>
+				<li>
+					<b>Six stages of child grooming?</b>
+					<br>
+					<a href="https://www.instagram.com/p/CHIjwYOh4Nh/?utm_source=ig_web_copy_link" target="_blank">Click here</a>
+					<hr class="style-three">
+				</li>
+				<li>
+					<b>How to protect a child from grooming?</b>
+					<br>
+					<a href="https://www.instagram.com/p/CHVZTCkB_0A/?utm_source=ig_web_copy_link" target="_blank">Click here</a>
+					<hr class="style-three">
+				</li>
+				<li>
+					<b>What do parents experience after disclose of a sexual abuse incident of their child?</b>
+					<br>
+					<a href="https://www.instagram.com/p/CJJTGymhnq_/?utm_source=ig_web_copy_link" target="_blank">Click here</a>
+					<hr class="style-three">
+				</li>
+				<li>
+					<b>Are boys being sexually abused?</b>
+					<br>
+					<a href="https://www.instagram.com/p/CJoM3Hzh2tD/?utm_source=ig_web_copy_link" target="_blank">Click here</a>
+					<hr class="style-three">
+				</li>
+				<li>
+					<b>What are short term effects of child sexual abuse?</b>
+					<br>
+					<a href="https://www.instagram.com/p/CJtW1BSh9d9/?utm_source=ig_web_copy_link" target="_blank">Click here</a>
+					<hr class="style-three">
+				</li>
+			</ul>
+		</div>
+		
+		<div class="section-space footer"><!-- footer -->		
+			<div class="container">		
+				<div class="row">		
+					<div class="col-md-12">		
+						<div class="row">		
+							<div class="col-md-2 footer-block">		
+								<ul class="listnone">		
+									<li><a href="{% url 'home_page' %}">Home</a>		
+									<li><a href="{% url 'post_list' %}">Blog</a>
+									<li><a href="{% url 'faq' %}">Faq</a>
+									<li><a href="{% url 'survivor_story' %}">Stories</a>					
+								</ul>		
+							</div>	
+							<div class="col-md-2 footer-block">		
+								<ul class="listnone">		
+									<li><a href="{% url 'work_with_us' %}"  style="font-size:14px;">Work With Us</a></li>
+									<li><a href="{% url 'who_we_are' %}"  style="font-size:14px;">Who We Are</a></li>
+									<li><a href="{% url 'our_work' %}"  style="font-size:14px;">Our Work</a></li>
+								</ul>		
+							</div>	
+							<div class="col-md-2 footer-block">		
+								<ul class="listnone">		
+									<li><a href="https://www.facebook.com/pg/bachpan15" target="_blank">Facebook</a></li>
+									<li><a href="https://twitter.com/Bachpan_15?s=09" target="_blank">Twitter</a></li>
+									<li><a href="https://instagram.com/bachpan15?igshid=1g66003fv8jx" target="_blank">Instagram</a></li>
+									<li><a href="http://www.linkedin.com/company/bachpan15" target="_blank">Linked In</a></li>
+								</ul>		
+							</div>				
+							<div class="col-md-2 footer-block footer-contact">		
+							<img class="img" src="{% static 'image/qr.png' %}" width="80%">		
+							</div>		
+							<div class="col-md-4 footer-block">				
+								<p>
+									<a>Bachpan-Save the innocence</a><br>
+									<a>Panchkula</a><br>
+									<a>Haryana</a><br>
+									<a>Contact No.: 8847586324</a><br>
+									<a>Email: bachpansavetheinnocence@gmail.com</a><br>
+								</p>		
+							</div>		
+						</div>		
+					</div>		
+				</div>		
+			</div>			
+		</div>	
+	</body>		
+</html>
